@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Student Form</h1>
+    <div id="input-box">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="text" id="age"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>Courses</th>
+                <td>
+                    <select name="Courses" >
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Java">JavaScript</option>
+                        <option value="Java">DBMS</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="text" id="email"></td>
+            </tr>
+        </table>
+        <button id="save" onclick="addName()">Save</button>
+    </div>
+    <div id="output-box">
+        <table id="output-table">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Courses</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>sandy</td>
+                <td>21</td>
+                <td>Male</td>
+                <td>JavaScript</td>
+                <td>sandy@gamil.com</td>
+                <td><button id="del" onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
